@@ -1,15 +1,9 @@
 .header {
   width: 100vw;
   /* height: 100vh; */
-  background-image: linear-gradient(180deg, rgb(0,0,0), rgb(0, 136, 0)), url('./assets/background-image.jpg');
+  background-image: linear-gradient(270deg, rgb(0,0,0), rgb(10, 110, 0)), url('./assets/background-image.jpg');
   background-position: 85% 5%;
   background-blend-mode: multiply;
-}
-
-.wrapper {
-  width: 100vw;
-  /* height: 100vh; */
-  backdrop-filter: blur(16px);
 }
 
 .header__container {
@@ -29,12 +23,12 @@
   height: 410px;
   border-radius: 16px;
   border: 4px rgb(153, 153, 153) solid;
-  transition: 0.5s;
+  transition: transform 150ms;
 }
 
 .header__video:hover {
   border: 4px rgb(249, 203, 37) solid;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 .header__button {
@@ -46,6 +40,13 @@
   border-radius: 8px;
   font-size: 2.4rem;
   font-weight: 500;
+}
+
+.header__button:hover {
+  background-color: rgb(227, 181, 18);
+  transition: transform 150ms;
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 @media(max-width:992px) {
