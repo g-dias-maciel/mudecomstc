@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: linear-gradient(0deg, rgb(0,0,0), rgb(14, 74, 1)), url('./assets/background-image.jpg');
+  background-image: linear-gradient(0deg, rgb(0,0,0), rgb(1, 113, 77)), url('./assets/background-image.jpg');
   background-position: 85% 10%;
   background-blend-mode: multiply;
 }
@@ -56,10 +56,15 @@ h6 {
   font-size: 0.8rem;
 }
 
+
 .highlight-text {
-  font-size: 6.0rem;
+  font-weight: bold;
   color: rgb(249, 203, 37);
   /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; stroke code maybe use later*/
+}
+
+.inline {
+  display: inline;
 }
 
 .container {

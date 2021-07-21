@@ -18,84 +18,33 @@
     <div class="wrapper">
         <header>
             <div class="header__container d-flex flex-column">
-                <img src="./assets/image.png" alt="Revelado" class="header__title">
+                <img src="./assets/background%20site.png" alt="Revelado" class="header__title">
             </div>
         </header>
         <container class="container flex-column" id="start_quiz_container">
                 <h1 class="quiz-heading-text text-center">
-                    DESCUBRA O QUE ESTA FAZENDO COM QUE <span class="highlight-text">VOCE</span> NAO ALCANCE
-                    <span class="highlight-text">SEUS OBJETIVOS</span>
+                    DESCUBRA O QUE ESTA FALTANDO PARA <span class="highlight-text">VOCÊ</span> OBTER O
+                    <span class="highlight-text">CORPO DOS SEUS SONHOS</span>
                 </h1>
                 <button class="btn start-quiz-btn flex-column flex-center" id="start_quiz">
                     QUERO DESCOBRIR AGORA
                 </button>
         </container>
-        <container class="container flex-column hidden" id="box_1_container">
-                <div class="quiz-box flex-column" id="quiz_box_1">
-                    <div class="question-text text-center" id="question_text_1">
-                        Pergunta 1 ?
+         <container class="container flex-column hidden" id="box_1_container" page="0">
+                <div class="quiz-box flex-column" id="quiz_box_1" >
+                    <div class="question-text text-center" id="question_text_0">
                     </div>
-                    <div class="radio-toolbar">
-                        <input type="radio" id="option_1" name="radio_quiz" >
-                        <label for="option_1" class="flex-center">Opcao 1</label>
-
-                        <input type="radio" id="option_2" name="radio_quiz">
-                        <label for="option_2">Opcao 2</label>
-
-                        <input type="radio" id="option_3" name="radio_quiz">
-                        <label for="option_3">Opcao 3</label>
-
-                        <input type="radio" id="option_4" name="radio_quiz">
-                        <label for="option_4">Opcao 4</label>
+                    <div class="text-center btn-toolbar">
+                        <input type="button" id="option_1" name="radio_quiz">
+                        <label for="option_1" class="text-center" id="label_option_1"></label>
                     </div>
-                    <button class="btn btn-secondary flex-column btn_previous_question" id="previous_question">
-                        Voltar
-                    </button>
-                    <button class="btn btn-primary flex-column btn_next_question" id="next_question">
-                        Continuar
-                    </button>
+                    <div class="text-center btn-toolbar">
+                        <input type="button" id="option_2" name="radio_quiz" >
+                        <label for="option_2" class="text-center" id="label_option_2"></label>
+                    </div>
                 </div>
         </container>
     </div>
-    <container class="container hidden">
-        <div class="wrapper">
-            <div class="quiz-box" id="quiz_box_2">
-                <div class="question-text" id="question_text_2">
-                    teste
-                </div>
-                <div class="quiz-option" id="option_2_1">OPCAO 1</div>
-                <div class="quiz-option" id="option_2_2">OPCAO 2</div>
-                <div class="quiz-option" id="option_2_3">OPCAO 3</div>
-                <div class="quiz-option" id="option_2_4">OPCAO 4</div>
-            </div>
-        </div>
-    </container>
-    <container class="container hidden">
-        <div class="wrapper">
-            <div class="quiz-box" id="quiz_box_3">
-                <div class="question-text" id="question_text_3">
-                    teste
-                </div>
-                <div class="quiz-option" id="option_3_1">OPCAO 1</div>
-                <div class="quiz-option" id="option_3_2">OPCAO 2</div>
-                <div class="quiz-option" id="option_3_3">OPCAO 3</div>
-                <div class="quiz-option" id="option_3_4">OPCAO 4</div>
-            </div>
-        </div>
-    </container>
-    <container class="container hidden">
-        <div class="wrapper">
-            <div class="quiz-box" id="quiz_box_4">
-                <div class="question-text" id="question_text">
-                    teste
-                </div>
-                <div class="quiz-option" id="option_4_1">OPCAO 1</div>
-                <div class="quiz-option" id="option_4_2">OPCAO 2</div>
-                <div class="quiz-option" id="option_4_3">OPCAO 3</div>
-                <div class="quiz-option" id="option_4_4">OPCAO 4</div>
-            </div>
-        </div>
-    </container>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
