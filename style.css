@@ -12,7 +12,9 @@
 
 body {
   background-image: linear-gradient(0deg, rgb(0,0,0), rgb(1, 113, 77)), url('./assets/background-image.jpg');
-  background-position: 85% 10%;
+  background-position: 100% 10%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-blend-mode: multiply;
 }
 
@@ -58,10 +60,17 @@ h6 {
 
 
 .highlight-text {
-  font-weight: bold;
+  font-weight: 500;
   color: rgb(249, 203, 37);
   /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; stroke code maybe use later*/
 }
+
+.highlight-text-2 {
+  font-weight: 700;
+  color: rgb(249, 203, 37);
+  /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; stroke code maybe use later*/
+}
+
 
 .inline {
   display: inline;
@@ -98,6 +107,50 @@ h6 {
   display: none;
 }
 
+div {
+  display: inline-block;
+}
+
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position: relative;
+  height:0;
+}
+.video-responsive iframe{
+  position: absolute;
+  margin: auto;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height:55%;
+  width:55%;
+}
+
+.centered-thing {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bandeiras {
+  padding: 0px
+}
+
+.bandeiras ul {
+  list-style: none;
+}
+
+.bandeiras li {
+  background-color: #FFFFFF;
+  display: inline;
+  padding:15px 15px 10px 15px;
+  border-radius: 10px;
+  margin:10px;
+}
+
 @media(max-width:2500px) {
   body {
     background-position: 80% 10%;
@@ -109,17 +162,25 @@ h6 {
     background-position: 70% 10%;
   }
 
-  .highlight-text{
-    font-size: 2.8rem;
+
+  .video-responsive iframe{
+
+    height:75%;
+    width:75%;
   }
+
 }
 
 @media (max-width:576px) {
+
+  .video-responsive iframe{
+    top: 50%;
+    height:55%;
+    width:55%;
+  }
+
   body {
     background-position: 60% 10%;
   }
 
-  .highlight-text{
-    font-size: 2.8rem;
-  }
 }

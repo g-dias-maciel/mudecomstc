@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="header.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <title>Document</title>
+    <script src="video_tracker.js" type="text/javascript"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="wrapper">
-      <div class="header__container d-flex flex-column">
-        <img src="./assets/image.png" alt="Revelado" class="header__title">
-        <iframe src="https://www.youtube.com/embed/5_1djEfZIOE?rel=0?version=3&autoplay=1&controls=0" class="header__video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-        <button class="header__button">
-          Quero acesso ao STC
-        </button>
-      </div>
-    </div>
-  </header>
+  <div class="wrapper">
+    <header>
+        <div class="header__container flex-column flex-center">
+          <img src="./assets/revelado_imagem.png" alt="Revelado" class="header__title">
+        </div>
+    </header>
+    <container class="container flex-column">
+        <h1 class="sales-heading-text text-center">
+            <span class="highlight-text-2">MÉTODO</span> BASEADO EM <span class="highlight-text-2">5</span> PILARES MOSTRA COMO <span class="highlight-text-2">VOCÊ</span> PODE <span class="highlight-text-2">EMAGRECER, DEFINIR, SE MANTER MAGRO </span> E AINDA  <span class="highlight-text-2">GOSTAR</span> DO PROCESSO!
+        </h1>
+        <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'; player.playVideo(); player.setVolume(70)">
+            <img src="./assets/6.png" style="cursor:pointer" class="sales_video" />
+        </div>
+        <div id="player" class="sales_video" style="display:none">
+            <!--aqui entra o iframe do yt api-->
+       </div>
+        <div>
+            <a href="https://go.hotmart.com/R45765899R?ap=8b97" target="_blank">
+                <button id="button_stc" class="header__button hidden">
+                    Quero acesso ao STC
+                </button>
+            </a>
+        </div>
+        <div>
+            <ul id="bandeiras_id" class="bandeiras hidden">
+                <li><img src="./assets/mastercard.png"></li>
+                <li><img src="./assets/visa.png"></li>
+                <li><img src="./assets/paypal.png"></li>
+                <li><img src="./assets/american.png"></li>
+<!--                <li><img src="./assets/boleto.png"></li>-->
+            </ul>
+        </div>
+<!--        <h2 class="sales-under-text text-center">-->
+<!--            Se você não consegue perder a barriga, não consegue controlar a ânsia de comer, perde um pouco de peso mas logo ganha de novo...-->
+<!--        </h2>-->
+    </container>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

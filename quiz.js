@@ -34,7 +34,11 @@ function update_quiz(next_question){
     var quiz_indexes = Object.keys(quiz);
     var question_label = quiz_indexes[next_question]
 
-    //todo check if is last question
+    if (next_question === quiz_indexes.length){
+        var domain = window.location.href;
+
+        window.location.href = domain.replace('quiz.html', 'index.html')
+    }
 
     $('#question_text_0').html(question_label)
 
