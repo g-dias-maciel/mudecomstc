@@ -20,7 +20,7 @@ function onYouTubeIframeAPIReady() {
         videoId: '5_1djEfZIOE',
         playerVars: {
             'controls': '0',
-            'autoplay': '1',
+            'autoplay': '0',
             'disablekb': '1',
             'enablejsapi': '1',
             'modestbranding': '1',
